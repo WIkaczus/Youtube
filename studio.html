@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Studio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="studio-style.css">
+</head>
+<body class="studio-page">
+    <!-- Studio Header -->
+    <header class="studio-header">
+        <div class="header-left">
+            <a href="index.html" class="studio-logo">
+                <img src="https://www.youtube.com/s/desktop/7c155e84/img/favicon_144x144.png" alt="YouTube Logo">
+                <span>YouTube Studio</span>
+            </a>
+        </div>
+        
+        <div class="header-right">
+            <button class="theme-toggle" id="theme-toggle">
+                <span class="material-icons">dark_mode</span>
+            </button>
+            <button class="icon-button" id="help-button">
+                <span class="material-icons">help</span>
+            </button>
+            <button class="icon-button" id="feedback-button">
+                <span class="material-icons">feedback</span>
+            </button>
+            <button class="profile-button" id="studio-profile-button">
+                <img src="https://i.pravatar.cc/150?img=12" alt="Profile" class="profile-img">
+            </button>
+        </div>
+    </header>
+
+    <!-- Studio Sidebar -->
+    <nav class="studio-sidebar">
+        <div class="sidebar-section">
+            <a href="#" class="sidebar-item active">
+                <span class="material-icons">dashboard</span>
+                <span>Panel</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <span class="material-icons">movie</span>
+                <span>Treści</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <span class="material-icons">analytics</span>
+                <span>Analityka</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <span class="material-icons">comment</span>
+                <span>Komentarze</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <span class="material-icons">subtitles</span>
+                <span>Napisy</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <span class="material-icons">copyright</span>
+                <span>Prawa autorskie</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <span class="material-icons">monetization_on</span>
+                <span>Monetyzacja</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <span class="material-icons">settings</span>
+                <span>Ustawienia</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Studio Main Content -->
+    <main class="studio-main">
+        <!-- Channel Overview -->
+        <section class="channel-overview">
+            <div class="overview-header">
+                <div class="header-content">
+                    <h1>Panel kanału</h1>
+                    <div class="channel-quick-info">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Channel Avatar" class="channel-avatar">
+                        <div class="channel-details">
+                            <h2>Gaming Masters</h2>
+                            <p>1.2K subskrybentów</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="date-selector">
+                    <span class="material-icons">date_range</span>
+                    <span>Ostatnie 28 dni</span>
+                    <span class="material-icons">arrow_drop_down</span>
+                </div>
+            </div>
+
+            <!-- Performance Cards -->
+            <div class="performance-cards">
+                <div class="performance-card">
+                    <div class="card-header">
+                        <span class="material-icons">visibility</span>
+                        <h3>Wyświetlenia</h3>
+                    </div>
+                    <div class="metric">
+                        <span class="number">10.5K</span>
+                        <span class="change positive">
+                            <span class="material-icons">trending_up</span>
+                            +12.5%
+                        </span>
+                    </div>
+                    <div class="chart">
+                        <div class="chart-bar" style="height: 60%"></div>
+                        <div class="chart-bar" style="height: 40%"></div>
+                        <div class="chart-bar" style="height: 80%"></div>
+                        <div class="chart-bar" style="height: 50%"></div>
+                        <div class="chart-bar active" style="height: 90%"></div>
+                    </div>
+                </div>
+                <div class="performance-card">
+                    <div class="card-header">
+                        <span class="material-icons">people</span>
+                        <h3>Subskrybenci</h3>
+                    </div>
+                    <div class="metric">
+                        <span class="number">1.2K</span>
+                        <span class="change positive">
+                            <span class="material-icons">trending_up</span>
+                            +5.2%
+                        </span>
+                    </div>
+                    <div class="chart">
+                        <div class="chart-bar" style="height: 30%"></div>
+                        <div class="chart-bar" style="height: 45%"></div>
+                        <div class="chart-bar" style="height: 60%"></div>
+                        <div class="chart-bar" style="height: 75%"></div>
+                        <div class="chart-bar active" style="height: 85%"></div>
+                    </div>
+                </div>
+                <div class="performance-card">
+                    <div class="card-header">
+                        <span class="material-icons">schedule</span>
+                        <h3>Czas oglądania (h)</h3>
+                    </div>
+                    <div class="metric">
+                        <span class="number">425.8</span>
+                        <span class="change positive">
+                            <span class="material-icons">trending_up</span>
+                            +8.7%
+                        </span>
+                    </div>
+                    <div class="chart">
+                        <div class="chart-bar" style="height: 50%"></div>
+                        <div class="chart-bar" style="height: 65%"></div>
+                        <div class="chart-bar" style="height: 45%"></div>
+                        <div class="chart-bar" style="height: 70%"></div>
+                        <div class="chart-bar active" style="height: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latest Videos -->
+            <div class="latest-videos">
+                <div class="section-header">
+                    <div class="header-left">
+                        <h2>Ostatnie filmy</h2>
+                        <span class="video-count">25 filmów</span>
+                    </div>
+                    <button class="upload-button" id="studio-upload-button">
+                        <span class="material-icons">upload</span>
+                        Prześlij film
+                    </button>
+                </div>
+                <div class="videos-table">
+                    <div class="table-header">
+                        <div class="col">Film</div>
+                        <div class="col">Widoczność</div>
+                        <div class="col">Data</div>
+                        <div class="col">Wyświetlenia</div>
+                        <div class="col">Komentarze</div>
+                        <div class="col">Oceny</div>
+                        <div class="col">Akcje</div>
+                    </div>
+                    <div class="video-rows">
+                        <!-- Video rows will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ideas and Tips -->
+            <div class="creator-tips">
+                <h2>Wskazówki dla twórców</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <span class="material-icons">lightbulb</span>
+                        </div>
+                        <div class="tip-content">
+                            <h3>Optymalizuj swoje filmy</h3>
+                            <p>Dodaj tagi, opisy i przyciągające miniatury, aby zwiększyć zasięg.</p>
+                            <a href="#" class="learn-more">Dowiedz się więcej <span class="material-icons">arrow_forward</span></a>
+                        </div>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <span class="material-icons">schedule</span>
+                        </div>
+                        <div class="tip-content">
+                            <h3>Publikuj regularnie</h3>
+                            <p>Utrzymuj stały harmonogram publikacji, aby budować lojalną widownię.</p>
+                            <a href="#" class="learn-more">Dowiedz się więcej <span class="material-icons">arrow_forward</span></a>
+                        </div>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <span class="material-icons">trending_up</span>
+                        </div>
+                        <div class="tip-content">
+                            <h3>Śledź trendy</h3>
+                            <p>Wykorzystuj aktualne tematy i trendy w swojej treści.</p>
+                            <a href="#" class="learn-more">Dowiedz się więcej <span class="material-icons">arrow_forward</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Studio Upload Modal -->
+    <div class="modal" id="studio-upload-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Prześlij film</h2>
+                <button class="close-button" id="close-studio-upload-modal">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="upload-area" id="studio-upload-area">
+                <span class="material-icons">cloud_upload</span>
+                <p>Przeciągnij i upuść plik wideo lub kliknij, aby wybrać</p>
+                <input type="file" id="studio-file-input" accept="video/*" hidden>
+            </div>
+            <div class="upload-details" style="display: none;">
+                <div class="form-group">
+                    <label for="video-title">Tytuł</label>
+                    <input type="text" id="video-title" placeholder="Dodaj tytuł..." required>
+                </div>
+                <div class="form-group">
+                    <label for="video-description">Opis</label>
+                    <textarea id="video-description" placeholder="Powiedz widzom o swoim filmie..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="video-thumbnail">Miniatura</label>
+                    <div class="thumbnail-upload">
+                        <img src="#" alt="Miniatura" id="thumbnail-preview" style="display: none;">
+                        <button class="upload-button" id="thumbnail-upload-button">
+                            <span class="material-icons">image</span>
+                            Prześlij miniaturę
+                        </button>
+                        <input type="file" id="thumbnail-input" accept="image/*" hidden>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Widoczność</label>
+                    <div class="visibility-options">
+                        <label class="radio-option">
+                            <input type="radio" name="visibility" value="public" checked>
+                            <span class="material-icons">public</span>
+                            Publiczny
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="visibility" value="unlisted">
+                            <span class="material-icons">link</span>
+                            Niepubliczny
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="visibility" value="private">
+                            <span class="material-icons">lock</span>
+                            Prywatny
+                        </label>
+                    </div>
+                </div>
+                <button class="publish-button" id="publish-button">
+                    Opublikuj
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="studio.js"></script>
+</body>
+</html>

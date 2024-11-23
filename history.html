@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia - YouTube</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header class="header">
+        <div class="header-left">
+            <span class="material-icons menu-icon">menu</span>
+            <a href="index.html" class="logo">
+                <img src="https://www.youtube.com/s/desktop/7c155e84/img/favicon_144x144.png" alt="YouTube Logo">
+                <span>YouTube</span>
+            </a>
+        </div>
+        
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" class="search-input" placeholder="Szukaj">
+                <button type="submit" class="search-button">
+                    <span class="material-icons">search</span>
+                </button>
+            </form>
+            <button class="voice-search-button">
+                <span class="material-icons">mic</span>
+            </button>
+        </div>
+        
+        <div class="header-right">
+            <button class="icon-button" id="create-button">
+                <span class="material-icons">video_call</span>
+            </button>
+            <button class="icon-button" id="apps-button">
+                <span class="material-icons">apps</span>
+            </button>
+            <button class="icon-button" id="notifications-button">
+                <span class="material-icons">notifications</span>
+            </button>
+            <button class="profile-button" id="profile-button">
+                <span class="material-icons">account_circle</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sidebar (same as index.html) -->
+    <nav class="sidebar">
+        <div class="sidebar-section">
+            <a href="index.html" class="sidebar-item">
+                <span class="material-icons">home</span>
+                <span>Główna</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <span class="material-icons">explore</span>
+                <span>Odkrywaj</span>
+            </a>
+            <a href="subscriptions.html" class="sidebar-item">
+                <span class="material-icons">subscriptions</span>
+                <span>Subskrypcje</span>
+            </a>
+        </div>
+        <div class="sidebar-section">
+            <a href="#" class="sidebar-item">
+                <span class="material-icons">video_library</span>
+                <span>Biblioteka</span>
+            </a>
+            <a href="history.html" class="sidebar-item active">
+                <span class="material-icons">history</span>
+                <span>Historia</span>
+            </a>
+            <a href="studio.html" class="sidebar-item">
+                <span class="material-icons">video_settings</span>
+                <span>YouTube Studio</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <span class="material-icons">thumb_up</span>
+                <span>Polubione</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="history-header">
+            <h1>Historia oglądania</h1>
+            <div class="history-controls">
+                <button class="history-button">
+                    <span class="material-icons">search</span>
+                    Szukaj w historii
+                </button>
+                <button class="history-button">
+                    <span class="material-icons">delete</span>
+                    Wyczyść historię
+                </button>
+                <button class="history-button">
+                    <span class="material-icons">settings</span>
+                    Ustawienia historii
+                </button>
+            </div>
+        </div>
+
+        <div class="history-filters">
+            <button class="filter-button active">Wszystko</button>
+            <button class="filter-button">Dzisiaj</button>
+            <button class="filter-button">Wczoraj</button>
+            <button class="filter-button">Ten tydzień</button>
+            <button class="filter-button">Ten miesiąc</button>
+        </div>
+
+        <div class="history-list" id="history-list">
+            <!-- History items will be dynamically added here -->
+            <div class="empty-history">
+                <span class="material-icons">history</span>
+                <h2>Brak historii oglądania</h2>
+                <p>Filmy, które oglądasz, pojawią się tutaj</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

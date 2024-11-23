@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Channel - YouTube</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="channel-style.css">
+</head>
+<body>
+    <!-- Header (same as before) -->
+    <header class="header">
+        <div class="header-left">
+            <span class="material-icons menu-icon">menu</span>
+            <a href="index.html" class="logo">
+                <img src="https://www.youtube.com/s/desktop/7c155e84/img/favicon_144x144.png" alt="YouTube Logo">
+                <span>YouTube</span>
+            </a>
+        </div>
+        
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" class="search-input" placeholder="Szukaj">
+                <button type="submit" class="search-button">
+                    <span class="material-icons">search</span>
+                </button>
+            </form>
+            <button class="voice-search-button">
+                <span class="material-icons">mic</span>
+            </button>
+        </div>
+        
+        <div class="header-right">
+            <button class="theme-toggle" id="theme-toggle">
+                <span class="material-icons">dark_mode</span>
+            </button>
+            <button class="icon-button" id="create-button">
+                <span class="material-icons">video_call</span>
+            </button>
+            <button class="icon-button" id="notifications-button">
+                <span class="material-icons">notifications</span>
+            </button>
+            <button class="profile-button" id="profile-button">
+                <img src="https://i.pravatar.cc/150?img=12" alt="Profile" class="profile-img">
+            </button>
+        </div>
+    </header>
+
+    <!-- Channel Header -->
+    <div class="channel-header">
+        <div class="channel-banner">
+            <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=1200&h=300&fit=crop" alt="Banner kanału" class="banner-img">
+            <button class="edit-banner-button">
+                <span class="material-icons">edit</span>
+                Edytuj baner
+            </button>
+        </div>
+        <div class="channel-info">
+            <div class="channel-avatar">
+                <img src="https://i.pravatar.cc/150?img=12" alt="Avatar kanału" class="avatar-img">
+                <button class="edit-avatar-button">
+                    <span class="material-icons">edit</span>
+                </button>
+            </div>
+            <div class="channel-details">
+                <h1>Gaming Masters</h1>
+                <div class="channel-stats">
+                    <span class="stat-item">
+                        <span class="material-icons">people</span>
+                        1.2K subskrybentów
+                    </span>
+                    <span class="separator">•</span>
+                    <span class="stat-item">
+                        <span class="material-icons">videocam</span>
+                        25 filmów
+                    </span>
+                    <span class="separator">•</span>
+                    <span class="stat-item">
+                        <span class="material-icons">visibility</span>
+                        10K wyświetleń
+                    </span>
+                </div>
+                <p class="channel-description">
+                    Witaj na kanale Gaming Masters! Znajdziesz tu najlepsze gameplaye, poradniki i recenzje najnowszych gier. 
+                    Dołącz do naszej społeczności graczy! 🎮✨
+                </p>
+                <div class="channel-actions">
+                    <button class="subscribe-button">
+                        <span class="material-icons">notifications</span>
+                        Subskrybuj
+                    </button>
+                    <button class="customize-channel-button">
+                        <span class="material-icons">settings</span>
+                        Dostosuj kanał
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Channel Navigation -->
+    <nav class="channel-nav">
+        <a href="#" class="channel-nav-item active">STRONA GŁÓWNA</a>
+        <a href="#" class="channel-nav-item">FILMY</a>
+        <a href="#" class="channel-nav-item">PLAYLISTY</a>
+        <a href="#" class="channel-nav-item">SPOŁECZNOŚĆ</a>
+        <a href="#" class="channel-nav-item">INFORMACJE</a>
+        <a href="studio.html" class="channel-nav-item">YOUTUBE STUDIO</a>
+    </nav>
+
+    <!-- Channel Content -->
+    <main class="channel-content">
+        <!-- Featured Video Section -->
+        <section class="featured-video">
+            <h2>
+                <span class="material-icons">stars</span>
+                Polecane dla nowych widzów
+            </h2>
+            <div class="featured-video-grid">
+                <a href="video.html" class="featured-video-card" target="_blank">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=225&fit=crop" alt="Featured Video">
+                        <span class="duration">15:30</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>Najlepsze momenty z rozgrywki - Compilation 2024</h3>
+                        <p class="video-stats">10K wyświetleń • 2 dni temu</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Popular Uploads -->
+        <section class="popular-uploads">
+            <h2>
+                <span class="material-icons">trending_up</span>
+                Popularne przesłane filmy
+            </h2>
+            <div class="videos-grid">
+                <a href="video.html" class="video-card" target="_blank">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=400&h=225&fit=crop" alt="Video 1">
+                        <span class="duration">10:15</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>Poradnik: Jak zostać lepszym graczem</h3>
+                        <p class="video-stats">5K wyświetleń • 5 dni temu</p>
+                    </div>
+                </a>
+                <a href="video.html" class="video-card" target="_blank">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?w=400&h=225&fit=crop" alt="Video 2">
+                        <span class="duration">8:45</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>Recenzja najnowszej gry RPG</h3>
+                        <p class="video-stats">3.2K wyświetleń • 1 tydzień temu</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Playlists -->
+        <section class="channel-playlists">
+            <h2>
+                <span class="material-icons">playlist_play</span>
+                Playlisty tematyczne
+            </h2>
+            <div class="playlists-grid">
+                <a href="#" class="playlist-card">
+                    <div class="playlist-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?w=400&h=225&fit=crop" alt="Playlist 1">
+                        <div class="playlist-overlay">
+                            <span class="material-icons">playlist_play</span>
+                            <span class="playlist-count">12 filmów</span>
+                        </div>
+                    </div>
+                    <div class="playlist-info">
+                        <h3>Poradniki dla początkujących</h3>
+                        <p>Seria filmów dla nowych graczy</p>
+                    </div>
+                </a>
+                <a href="#" class="playlist-card">
+                    <div class="playlist-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=400&h=225&fit=crop" alt="Playlist 2">
+                        <div class="playlist-overlay">
+                            <span class="material-icons">playlist_play</span>
+                            <span class="playlist-count">8 filmów</span>
+                        </div>
+                    </div>
+                    <div class="playlist-info">
+                        <h3>Recenzje gier 2024</h3>
+                        <p>Najnowsze recenzje i pierwsze wrażenia</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

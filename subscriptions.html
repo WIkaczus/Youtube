@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subskrypcje - YouTube</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="subscriptions-style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <span class="material-icons menu-icon">menu</span>
+            <a href="index.html" class="logo">
+                <img src="https://www.youtube.com/s/desktop/7c155e84/img/favicon_144x144.png" alt="YouTube Logo">
+                <span>YouTube</span>
+            </a>
+        </div>
+        
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" class="search-input" placeholder="Szukaj">
+                <button type="submit" class="search-button">
+                    <span class="material-icons">search</span>
+                </button>
+            </form>
+            <button class="voice-search-button">
+                <span class="material-icons">mic</span>
+            </button>
+        </div>
+        
+        <div class="header-right">
+            <button class="theme-toggle" id="theme-toggle">
+                <span class="material-icons">dark_mode</span>
+            </button>
+            <button class="icon-button">
+                <span class="material-icons">video_call</span>
+            </button>
+            <button class="icon-button">
+                <span class="material-icons">notifications</span>
+            </button>
+            <a href="channel.html" class="profile-button">
+                <img src="https://i.pravatar.cc/150?img=12" alt="Profile" class="profile-img">
+            </a>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar-section">
+            <a href="index.html" class="sidebar-item">
+                <span class="material-icons">home</span>
+                <span>Główna</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <span class="material-icons">movie_creation</span>
+                <span>Shorts</span>
+            </a>
+            <a href="subscriptions.html" class="sidebar-item active">
+                <span class="material-icons">subscriptions</span>
+                <span>Subskrypcje</span>
+            </a>
+        </div>
+        <div class="sidebar-section">
+            <a href="history.html" class="sidebar-item">
+                <span class="material-icons">history</span>
+                <span>Historia</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <span class="material-icons">thumb_up</span>
+                <span>Polubione</span>
+            </a>
+            <a href="studio.html" class="sidebar-item">
+                <span class="material-icons">video_settings</span>
+                <span>YouTube Studio</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="subscriptions-header">
+            <h1>Subskrypcje</h1>
+            <div class="subscription-filters">
+                <button class="chip active">Wszystkie</button>
+                <button class="chip">Dzisiaj</button>
+                <button class="chip">Kontynuuj oglądanie</button>
+                <button class="chip">Nieobejrzane</button>
+                <button class="chip">Na żywo</button>
+            </div>
+        </div>
+
+        <div class="subscribed-channels">
+            <h2>Twoje kanały</h2>
+            <div class="channel-grid">
+                <div class="channel-card">
+                    <div class="channel-banner">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=100&fit=crop" alt="Gaming Channel Banner">
+                    </div>
+                    <div class="channel-info">
+                        <img src="https://i.pravatar.cc/150?img=1" alt="Channel Avatar" class="channel-avatar">
+                        <h3>Gaming Masters</h3>
+                        <p>1.2M subskrybentów</p>
+                        <div class="channel-stats">
+                            <span><span class="material-icons">videocam</span> 245</span>
+                            <span><span class="material-icons">visibility</span> 10M</span>
+                        </div>
+                        <button class="subscribe-btn subscribed">
+                            <span class="material-icons">notifications_active</span>
+                            Subskrybujesz
+                        </button>
+                    </div>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-banner">
+                        <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=400&h=100&fit=crop" alt="Music Channel Banner">
+                    </div>
+                    <div class="channel-info">
+                        <img src="https://i.pravatar.cc/150?img=2" alt="Channel Avatar" class="channel-avatar">
+                        <h3>Music Vibes</h3>
+                        <p>850K subskrybentów</p>
+                        <div class="channel-stats">
+                            <span><span class="material-icons">videocam</span> 180</span>
+                            <span><span class="material-icons">visibility</span> 5M</span>
+                        </div>
+                        <button class="subscribe-btn subscribed">
+                            <span class="material-icons">notifications_active</span>
+                            Subskrybujesz
+                        </button>
+                    </div>
+                </div>
+
+                <div class="channel-card">
+                    <div class="channel-banner">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=100&fit=crop" alt="Tech Channel Banner">
+                    </div>
+                    <div class="channel-info">
+                        <img src="https://i.pravatar.cc/150?img=3" alt="Channel Avatar" class="channel-avatar">
+                        <h3>Tech Reviews</h3>
+                        <p>2.1M subskrybentów</p>
+                        <div class="channel-stats">
+                            <span><span class="material-icons">videocam</span> 320</span>
+                            <span><span class="material-icons">visibility</span> 15M</span>
+                        </div>
+                        <button class="subscribe-btn subscribed">
+                            <span class="material-icons">notifications_active</span>
+                            Subskrybujesz
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscription-videos">
+            <h2>Najnowsze filmy</h2>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=225&fit=crop" alt="Video Thumbnail">
+                        <span class="duration">10:15</span>
+                        <div class="hover-overlay">
+                            <span class="material-icons">play_arrow</span>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://i.pravatar.cc/150?img=1" alt="Channel Avatar" class="channel-avatar">
+                        <div class="video-details">
+                            <h3>Najnowszy gameplay z Cyberpunk 2077</h3>
+                            <p class="channel-name">Gaming Masters</p>
+                            <p class="video-stats">100K wyświetleń • 2 dni temu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=400&h=225&fit=crop" alt="Video Thumbnail">
+                        <span class="duration">15:30</span>
+                        <div class="hover-overlay">
+                            <span class="material-icons">play_arrow</span>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://i.pravatar.cc/150?img=2" alt="Channel Avatar" class="channel-avatar">
+                        <div class="video-details">
+                            <h3>Top 10 hitów lata 2024</h3>
+                            <p class="channel-name">Music Vibes</p>
+                            <p class="video-stats">50K wyświetleń • 1 dzień temu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=225&fit=crop" alt="Video Thumbnail">
+                        <span class="duration">8:45</span>
+                        <div class="hover-overlay">
+                            <span class="material-icons">play_arrow</span>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://i.pravatar.cc/150?img=3" alt="Channel Avatar" class="channel-avatar">
+                        <div class="video-details">
+                            <h3>Recenzja najnowszego iPhone'a</h3>
+                            <p class="channel-name">Tech Reviews</p>
+                            <p class="video-stats">75K wyświetleń • 3 dni temu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
